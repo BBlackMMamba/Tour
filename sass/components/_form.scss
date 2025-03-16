@@ -15,6 +15,22 @@
         border: none;
         transition:all .1s;
 
+        @include respond(tab-land){
+            width: 60%;
+            margin-bottom: 2rem;
+        }
+
+        @include respond(tab-port){
+        width: 100%;
+        margin-bottom: 2rem;
+        
+        }
+        
+        @include respond(phone){
+            width: 100%;
+        }
+        
+
         &:focus {
             outline:none;
             box-shadow: 0 1re 2rem rgba($color-black, .1);
@@ -31,7 +47,6 @@
 
     }
 
-     
 
     &__label {
         font-size: 1.2rem;
@@ -51,6 +66,18 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+
+        @include respond(tab-land){
+            width: 90%;
+            margin-bottom: 2rem;
+        }
+
+        @include respond(phone){
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+
     }
 
     &__radio-input {

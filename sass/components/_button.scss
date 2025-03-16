@@ -29,7 +29,6 @@
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
         outline: none;
-        pointer-events: none;
     }
 
     &--white {
@@ -52,7 +51,7 @@
     }
 
     &::after {
-        content: " ";
+        content: "";
         display: inline-block;
         height: 100%;
         width: 100%;
@@ -72,7 +71,7 @@
 
 .btn-text {
     &:link,
-    &:visited{
+    &:visited {
         font-size: $default-font-size;
         color: $color-primary;
         display: inline-block;
